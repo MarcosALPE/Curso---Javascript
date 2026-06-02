@@ -1,3 +1,4 @@
+// Descrição: Crie um programa que peça ao usuário o valor de uma compra. Se o valor for maior que 100, aplique 10% de desconto. Caso contrário o desconto será de 5%.
 let Vcompra = Number(prompt("Informe o valor da compra: "))
 
 if (Vcompra > 100) {
