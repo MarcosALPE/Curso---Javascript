@@ -7,5 +7,6 @@ if (resposta) {
     alert(`Conta excluída com sucesso`);
 } else {
     alert(`Ação cancelada pelo usuário`);
+
     
 }
