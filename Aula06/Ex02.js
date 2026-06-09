@@ -9,6 +9,6 @@ const usuario = {
 
 };
 
-atualizarIdade(usuario, 20);
+atualizarIdade(usuario, 25);
 
 console.log(usuario.idade);
