@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+h1 {
+    text-align: center;
+    color: #3730a3;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+.formulario {
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.formulario input,
+.formulario select {
+    flex: 1;
+    min-width: 180px;
+
+    padding: 13px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #6366f1;
+
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+
+
+button {
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #4f46e5;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.filtro {
+    margin: 30px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.filtro label {
+    font-weight: bold;
+    color: #3730a3;
+}
+
+
+.filtro select {
+    padding: 10px 15px;
+
+    border: 2px solid #c7d2fe;
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+
+.lista-livros {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(270px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    border-top: 5px solid #6366f1;
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.card h2 {
+    color: #312e81;
+
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+
+
+.card p {
+    font-size: 16px;
+
+    color: #475569;
+}
+
+
+
+
+.card p:last-of-type {
+    font-weight: bold;
+}
+
+
+
+.card .acoes {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+.card .acoes button {
+    flex: 1;
+}
+
+
+.btn-editar {
+    background-color: #7c3aed;
+}
+
+
+.btn-editar:hover {
+    background-color: #6d28d9;
+}
+
+
+.btn-excluir {
+    background-color: #dc2626;
+}
+
+
+.btn-excluir:hover {
+    background-color: #b91c1c;
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+
+        margin: 25px auto;
+    }
+
+
+    h1 {
+        font-size: 28px;
+    }
+
+
+    .formulario {
+        flex-direction: column;
+    }
+
+
+    .formulario input,
+    .formulario select,
+    .formulario button {
+        width: 100%;
+    }
+
+
+    .filtro {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .filtro select {
+        width: 100%;
+    }
+
+
+    .card .acoes {
+        flex-direction: column;
+    }
+
+}
