@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Pessoal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">        
+
+        <h1>📚 Biblioteca Pessoal</h1>
+
+        <!-- Formulário -->
+        <section class="formulario">
+
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Título do livro"
+            >
+
+            <input
+                type="text"
+                id="autor"
+                placeholder="Autor"
+            >
+
+            <input
+                type="number"
+                id="ano"
+                placeholder="Ano"
+            >
+
+            <select id="status">
+                <option value="Lido">Lido</option>
+                <option value="Não lido">Não lido</option>
+            </select>
+
+            <button id="btnSalvar">
+                Adicionar Livro
+            </button>
+
+        </section>
+
+        <!-- Filtro -->
+        <section class="filtro">
+
+            <label for="filtroStatus">
+                Filtrar:
+            </label>
+
+            <select id="filtroStatus">
+
+                <option value="Todos">
+                    Todos
+                </option>
+
+                <option value="Lido">
+                    Lidos
+                </option>
+
+                <option value="Não lido">
+                    Não lidos
+                </option>
+
+            </select>
+
+        </section>
+
+        <!-- Lista de livros -->
+        <section
+            id="listaLivros"
+            class="lista-livros">
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
